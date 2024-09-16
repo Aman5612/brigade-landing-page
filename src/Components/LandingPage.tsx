@@ -39,7 +39,7 @@ export default function LandingPage() {
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <Image
-              src="/placeholder.svg"
+              src="assets/images/placeholder.svg"
               alt="REAP Logo"
               width={100}
               height={40}
@@ -164,14 +164,14 @@ export default function LandingPage() {
                 />
               </svg>
             </Link>
-            <Image
-              src="/placeholder.svg"
+            {/* <Image
+              src="assets/images/placeholder.svg"
               //   src="/assets/images/building.svg"
               alt="Urban Tech"
               width={320}
               height={372}
               //   className="mt-4 rounded-lg absolute top-[-40px] right-[15px]"
-            />
+            /> */}
           </div>
         </div>
       </main>
