@@ -35,7 +35,7 @@ export default function LandingPage() {
   ];
   return (
     <div className="min-h-screen bg-white">
-      <header className="container px-4 py-6 min-w-[100vw]">
+      <header className="container px-4 py-6 max-w-[100vw]">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <Image
@@ -77,10 +77,10 @@ export default function LandingPage() {
         </nav>
       </header>
 
-      <main className="container px-4 py-12 min-w-[100vw]">
+      <main className="container px-4 py-12 max-w-[100vw]">
         <div className="grid md:grid-cols-2 gap-8 items-center ml-[49px] mr-[119px] p-0">
           <div className="w-full flex flex-col gap-[24px]">
-            <h1 className="text-[64px] md:text-5xl font-semibold w-[1112px]">
+            <h1 className="text-[64px] md:text-5xl font-semibold w-[1112px] max-lg:w-auto">
               Creating the World&apos;s Largest Early Stage Startup{" "}
               <span className="text-yellow-400">Ecosystem</span>
             </h1>
@@ -132,7 +132,7 @@ export default function LandingPage() {
               </button>
             </div>
           </div>
-          <div className="bg-yellow-400 rounded-[28px] p-8 w-[548px] h-[337px] absolute top-[220px] right-[86px]">
+          <div className="bg-yellow-400 rounded-[28px] p-8 w-[548px] h-[337px] absolute top-[220px] right-[86px] max-lg:hidden">
             <h2 className="text-[32px] font-bold mb-2">Urban Tech</h2>
             <p className="mb-4 text-[16px]">
               Urban Tech, short for{" "}
@@ -165,18 +165,18 @@ export default function LandingPage() {
               </svg>
             </Link>
             <Image
-                src="/placeholder.svg"
-            //   src="/assets/images/building.svg"
+              src="/placeholder.svg"
+              //   src="/assets/images/building.svg"
               alt="Urban Tech"
               width={320}
               height={372}
-            //   className="mt-4 rounded-lg absolute top-[-40px] right-[15px]"
+              //   className="mt-4 rounded-lg absolute top-[-40px] right-[15px]"
             />
           </div>
         </div>
       </main>
 
-      <div className="container min-w-[100vw] px-4 py-8">
+      <div className="container max-w-[100vw] px-4 py-8">
         <div className="flex justify-between items-center mb-6 ml-10 mr-14.5 border-b-[0.5px] border-[#000000]">
           <h2 className="text-[48px] text-[#404040] font-serif border-b-4 rounded-none border-[#FFC10E] z-10">
             Featured News
@@ -189,11 +189,10 @@ export default function LandingPage() {
             <ChevronRightIcon className="w-4 h-4 ml-1" />
           </Link>
         </div>
-        <div className="flex  mx-[40px] gap-6">
+        <div className="flex max-lg:flex-col mx-[40px] gap-6">
           <div className="md:col-span-2 w-[510px]">
             <Image
-              //   src="/placeholder.svg?height=400&width=800"
-              src="/assets/images/rectangle.svg"
+              src="/assets/images/placeholder.svg"
               alt="Futuristic cityscape"
               width={494}
               height={219}
@@ -216,8 +215,7 @@ export default function LandingPage() {
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex gap-4">
                 <Image
-                  // src="/placeholder.svg?height=100&width=100"
-                  src="/assets/images/small-rect-1.svg"
+                  src="/assets/images/placeholder.svg"
                   alt="Article thumbnail"
                   width={145}
                   height={140}
@@ -245,8 +243,7 @@ export default function LandingPage() {
             {[...Array(3)].map((_, i) => (
               <div key={i} className="flex gap-4">
                 <Image
-                  // src="/placeholder.svg?height=100&width=100"
-                  src="/assets/images/very-small-rect-1.svg"
+                  src="/assets/images/placeholder.svg"
                   alt="Article thumbnail"
                   width={105}
                   height={109}
@@ -268,7 +265,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <section className="max-w-6xl min-w-[100vw] px-4 py-12 bg-[#F5F5EF] pl-[61px] pr-[92px]">
+      <section className="max-w-[100vw] px-4 py-12 bg-[#F5F5EF] pl-[61px] pr-[92px]">
         <div className="flex justify-between items-start mb-8 relative">
           <div className="w-full flex gap-[86px]">
             <h2 className="text-4xl font-bold flex items-center gap-2 mb-4">
@@ -291,64 +288,56 @@ export default function LandingPage() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <Image
-            // src="/placeholder.svg?height=80&width=200"
-            src="/assets/images/rect-1.svg"
+            src="/assets/images/placeholder.svg"
             alt="Aegeus"
             width={226}
             height={107}
             className="object-contain"
           />
           <Image
-            // src="/placeholder.svg?height=80&width=200"
-            src="/assets/images/rect-2.svg"
+            src="/assets/images/placeholder.svg"
             alt="Birds Eye Energy"
             width={226}
             height={107}
             className="object-contain"
           />
           <Image
-            // src="/placeholder.svg?height=80&width=200"
-            src="/assets/images/rect-3.svg"
+            src="/assets/images/placeholder.svg"
             alt="WEGOT"
             width={226}
             height={107}
             className="object-contain"
           />
           <Image
-            // src="/placeholder.svg?height=80&width=200"
-            src="/assets/images/rect-4.svg"
+            src="/assets/images/placeholder.svg"
             alt="Natura"
             width={226}
             height={107}
             className="object-contain"
           />
           <Image
-            // src="/placeholder.svg?height=80&width=200"
-            src="/assets/images/rect-5.svg"
+            src="/assets/images/placeholder.svg"
             alt="Potholeraja"
             width={226}
             height={107}
             className="object-contain"
           />
           <Image
-            // src="/placeholder.svg?height=80&width=200"
-            src="/assets/images/rect-6.svg"
+            src="/assets/images/placeholder.svg"
             alt="Troncart"
             width={226}
             height={107}
             className="object-contain"
           />
           <Image
-            // src="/placeholder.svg?height=80&width=200"
-            src="/assets/images/rect-7.svg"
+            src="/assets/images/placeholder.svg"
             alt="ECOSTP"
             width={226}
             height={107}
             className="object-contain"
           />
           <Image
-            // src="/placeholder.svg?height=80&width=200"
-            src="/assets/images/rect-8.svg"
+            src="/assets/images/placeholder.svg"
             alt="Smarter Dharma"
             width={226}
             height={107}
@@ -357,7 +346,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <div className="max-w-4xl min-w-[100vw] p-6 space-y-8">
+      <div className="max-w[100vw] p-6 space-y-8">
         <section className="space-y-4 mx-[83px]">
           <h2 className="text-[48px] font-bold flex items-center">
             Who We Are
@@ -399,7 +388,7 @@ export default function LandingPage() {
         </section>
 
         <section className="space-y-4 ml-[58px] mr-[46px] border-b-1 border-[#000000]">
-          <h2 className="text-[48px] font-bold border-b-[4px] border-[#FFC10E] w-[882px]">
+          <h2 className="text-[48px] font-bold border-b-[4px] border-[#FFC10E] w-[882px] max-lg:w-auto">
             Connect with the Proptech Community
           </h2>
           <p className="text-[#404040] text-[28px]">
@@ -408,8 +397,7 @@ export default function LandingPage() {
           </p>
           <div className="bg-white rounded-lg shadow-md overflow-hidden flex ">
             <Image
-              //   src="/placeholder.svg?height=200&width=400"
-              src="/assets/images/rect-9.svg"
+              src="/assets/images/placeholder.svg"
               alt="BrigadeREAP Disrupt 2024 event"
               width={625}
               height={308}
@@ -441,7 +429,7 @@ export default function LandingPage() {
         </section>
       </div>
 
-      <div className="container mx-auto p-6 space-y-8">
+      <div className="container max-w-[100vw] mx-auto p-6 space-y-8">
         <section>
           <h2 className="text-[32px] font-medium mb-4">Upcoming Events</h2>
           <div className="container mx-auto p-4">
@@ -461,12 +449,12 @@ export default function LandingPage() {
                       index === 3
                         ? 687
                         : index === 2
-                        ? 430
-                        : index === 1
-                        ? 489
-                        : index === 0
-                        ? 687
-                        : 739
+                          ? 430
+                          : index === 1
+                            ? 489
+                            : index === 0
+                              ? 687
+                              : 739
                     }
                     className="w-full h-full object-cover"
                   />
@@ -540,7 +528,7 @@ export default function LandingPage() {
         </section>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container  max-w-[100vw] mx-auto px-4 py-8">
         <section className="mb-12">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-[48px] font-serif border-b-[4px] border-[#FFC10E]">
@@ -560,8 +548,7 @@ export default function LandingPage() {
               <Card key={i}>
                 <CardContent className="p-4">
                   <Image
-                    // src="/placeholder.svg?height=150&width=300"
-                    src="/assets/images/rect-14.svg"
+                    src="/assets/images/placeholder.svg"
                     alt={`Trench talk on Tuesday #${i}`}
                     className="w-full h-auto mb-2"
                     height={215}
@@ -599,16 +586,15 @@ export default function LandingPage() {
               <Card key={i} className="bg-gray-900 text-white">
                 <CardContent className="p-4">
                   <Image
-                    // src="/placeholder.svg?height=150&width=300"
-                    src="/assets/images/rect-16.svg"
+                    src="/assets/images/placeholder.svg"
                     alt="Community member"
                     className="w-full h-auto mb-2 rounded-full"
                     height={300}
                     width={300}
                   />
                   <p className="text-sm mb-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
                   <p className="font-bold">Kavya Sharma</p>
@@ -633,8 +619,7 @@ export default function LandingPage() {
               <Card key={i}>
                 <CardContent className="p-4 flex items-center gap-4">
                   <Image
-                    // src="/placeholder.svg?height=50&width=50"
-                    src="/assets/images/rect-17.svg"
+                    src="/assets/images/placeholder.svg"
                     alt={title}
                     className="w-12 h-12 object-cover rounded"
                     height={300}
@@ -653,7 +638,7 @@ export default function LandingPage() {
         </section>
       </div>
 
-      <footer className="bg-gray-900 text-gray-300 py-8">
+      <footer className="bg-gray-900  max-w-[100vw] text-gray-300 py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="mb-4 md:mb-0">
